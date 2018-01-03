@@ -1,5 +1,5 @@
 kumuluzee:
-  name: katalogProfilov
+  name: katalogSkupin
   env:
     name: dev
   version: 1.0.0
@@ -14,6 +14,6 @@ kumuluzee:
   metrics:
     web-instrumentation:
       - name: orders-endpoint
-        url-pattern: /v1/katalogProfilov/*
+        url-pattern: /v1/katalogSkupin/*
 rest-properties:
   healthy: true
