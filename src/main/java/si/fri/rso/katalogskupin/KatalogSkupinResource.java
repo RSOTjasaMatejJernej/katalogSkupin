@@ -26,14 +26,14 @@ public class KatalogSkupinResource {
 
     @GET
     @Metered
-    public Response getAllProfils() {
+    public Response getAllSkupins() {
         List<Skupina> skupinas = Database.getSkupinas();
         return Response.ok(skupinas).build();
     }
 
     @GET
     @Path("{skupinaId}")
-    public Response getProfil(@PathParam("skupinaId") Integer skupinaId) {
+    public Response getSkupina(@PathParam("skupinaId") Integer skupinaId) {
         Skupina skupina = Database.getSkupina(skupinaId.toString());
         return skupina != null
                 ? Response.ok(skupina).build()
@@ -48,8 +48,8 @@ public class KatalogSkupinResource {
 
     @DELETE
     @Path("{skupinaId}")
-    public Response deleteProfil(@PathParam("skupinaId") String profilId) {
-        Database.deleteSkupina(profilId);
+    public Response deleteSkupina(@PathParam("skupinaId") String skupinaId) {
+        Database.deleteSkupina(skupinaId);
         return Response.ok(Response.Status.OK).build();
     }
 
