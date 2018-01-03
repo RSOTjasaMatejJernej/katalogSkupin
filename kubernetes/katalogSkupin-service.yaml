@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: katalog-service
+  labels:
+    app: katalog-skupin
+spec:
+  type: NodePort
+  ports:
+  - port: 8081
+    protocol: TCP
+    targetPort: 8081
+    nodePort: 32223
+  selector:
+    app: katalog-skupin
