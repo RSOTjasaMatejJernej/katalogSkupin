@@ -1,0 +1,2 @@
+# katalogSkupin
+Katalog skupin
