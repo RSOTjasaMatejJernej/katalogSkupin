@@ -9,11 +9,11 @@ public class Database {
     private static List<Skupina> skupinas = new ArrayList<>();
 
     public static List<Skupina> getSkupinas() {
-        Skupina cus = new Skupina();
+        /*Skupina cus = new Skupina();
         cus.setId("1");
         cus.setName("FRI MAG letnik 2016/2017");
         cus.setAbout("Skupina za študente ki so se v drugo stopnjo vpisali navedenega leta.");
-        skupinas.add(cus);
+        skupinas.add(cus);*/
 
         return skupinas;
     }

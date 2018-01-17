@@ -10,7 +10,7 @@ spec:
         app: katalog-skupin
     spec:
       containers:
-      - image: tjasaj/katalog-skupin:0.01
+      - image: tjasaj/katalog-skupin:0.02
         name: katalog-skupin
         env:
           - name: KUMULUZEE_DISCOVERY_CLUSTER
